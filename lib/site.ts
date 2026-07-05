@@ -1,6 +1,6 @@
 export const site = {
   name: 'Thais Hossmann',
-  role: 'Assessora de Investimentos',
+  role: 'Planejadora Financeira',
   phoneDisplay: '+55 21 3265-3795',
   whatsappNumber: '552132653795',
   linkedin: 'https://www.linkedin.com/in/thaishossmann',

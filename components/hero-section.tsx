@@ -24,7 +24,7 @@ export function HeroSection() {
 
           <div className="flex flex-col gap-3 sm:flex-row">
             <Button asChild size="lg">
-              <a href={whatsappLink('Olá, Thais! Gostaria de agendar uma conversa sobre meus investimentos.')} target="_blank" rel="noopener noreferrer">
+              <a href="https://lead-planner-pro.vercel.app/cadastro-rapido?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQPOTM2NjE5NzQzMzkyNDU5AAGnViapw_LxtsxOvE7kda9Ioy64wvf2QU5HmzvSLuKhvJDm-x6cqyLnGoU-4KI_aem_ZVyQkSaUNscJ1amu0jS2kQ" target="_blank" rel="noopener noreferrer">
                 Agendar conversa
                 <ArrowRight className="size-4" />
               </a>
@@ -37,7 +37,7 @@ export function HeroSection() {
           <dl className="mt-2 grid grid-cols-3 gap-4 border-t border-border pt-6">
             <div>
               <dt className="sr-only">Seguidores</dt>
-              <dd className="font-serif text-2xl font-semibold text-foreground">+33 mil</dd>
+              <dd className="font-serif text-2xl font-semibold text-foreground">+100 mil</dd>
               <p className="text-xs text-muted-foreground">seguidores no LinkedIn</p>
             </div>
             <div>
