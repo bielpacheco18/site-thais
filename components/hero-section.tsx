@@ -18,7 +18,7 @@ export function HeroSection() {
           </h1>
 
           <p className="max-w-md text-pretty text-base leading-relaxed text-muted-foreground md:text-lg">
-            Sou Thais Hossmann, assessora de investimentos. Ajudo você a investir
+            Sou Thais Hossmann, planejadora financeira. Ajudo você a investir
             com clareza, propósito e uma estratégia alinhada aos seus objetivos de vida.
           </p>
 
@@ -37,7 +37,7 @@ export function HeroSection() {
           <dl className="mt-2 grid grid-cols-3 gap-4 border-t border-border pt-6">
             <div>
               <dt className="sr-only">Seguidores</dt>
-              <dd className="font-serif text-2xl font-semibold text-foreground">+100 mil</dd>
+              <dd className="font-serif text-2xl font-semibold text-foreground">+33 mil</dd>
               <p className="text-xs text-muted-foreground">seguidores no LinkedIn</p>
             </div>
             <div>
@@ -57,7 +57,7 @@ export function HeroSection() {
           <div className="relative mx-auto aspect-[4/5] w-full max-w-md overflow-hidden rounded-2xl bg-secondary shadow-xl">
             <Image
               src="/images/thais-hero.jpeg"
-              alt="Thais Hossmann, assessora de investimentos"
+              alt="Thais Hossmann, planejadora financeira"
               fill
               priority
               sizes="(max-width: 768px) 100vw, 40vw"

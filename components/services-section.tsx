@@ -1,4 +1,4 @@
-import { PiggyBank, LineChart, ShieldCheck, GraduationCap, Landmark, Compass } from 'lucide-react'
+import { Receipt, LineChart, ShieldCheck, GraduationCap, Landmark, Compass } from 'lucide-react'
 
 const services = [
   {
@@ -12,9 +12,9 @@ const services = [
     description: 'Carteiras diversificadas e equilibradas de acordo com o seu perfil de risco.',
   },
   {
-    icon: PiggyBank,
-    title: 'Reserva de emergência',
-    description: 'Estruturação da sua segurança financeira antes de buscar rentabilidade.',
+    icon: Receipt,
+    title: 'Otimização de Imposto de Renda',
+    description: 'Junto ao meu time jurídico, te damos todo o suporte para ganhar — e não perder — com o Imposto de Renda.',
   },
   {
     icon: Landmark,

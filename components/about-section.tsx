@@ -60,7 +60,7 @@ export function AboutSection() {
             <p>
               Minha trajetória no mercado financeiro passou por duas das maiores instituições do
               Brasil — o Santander, onde atuei na área de gestão patrimonial e fui embaixadora da
-              marca, e a XP Investimentos, onde estou hoje como assessora de investimentos.
+              marca, e a XP Investimentos, onde estou hoje como planejadora financeira.
             </p>
             <p>
               Ao longo desse caminho, ajudei pessoas a organizarem a vida financeira e a

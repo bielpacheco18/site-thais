@@ -16,7 +16,7 @@ const fraunces = Fraunces({
 })
 
 export const metadata: Metadata = {
-  title: 'Thais Hossmann | Assessora de Investimentos',
+  title: 'Thais Hossmann | Planejadora Financeira',
   description:
     'Assessoria de investimentos personalizada com Thais Hossmann. Planejamento financeiro, alocação de patrimônio e estratégia para seus objetivos. CEA · CPA-20.',
   generator: 'v0.app',
