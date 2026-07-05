@@ -14,7 +14,7 @@ const services = [
   {
     icon: Receipt,
     title: 'Otimização de Imposto de Renda',
-    description: 'Junto ao meu time jurídico, te damos todo o suporte para ganhar — e não perder — com o Imposto de Renda.',
+    description: 'Junto ao time jurídico, te damos todo o suporte para ganhar — e não perder — com o Imposto de Renda.',
   },
   {
     icon: Landmark,
