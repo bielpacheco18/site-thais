@@ -1,7 +1,8 @@
 'use client'
 
-import { useState } from 'react'
-import { Menu, X } from 'lucide-react'
+import { useState, useEffect } from 'react'
+import { Menu, X, Sun, Moon } from 'lucide-react'
+import { useTheme } from 'next-themes'
 import { Button } from '@/components/ui/button'
 import { site, whatsappLink } from '@/lib/site'
 
@@ -13,6 +14,10 @@ const navItems = [
 
 export function SiteHeader() {
   const [open, setOpen] = useState(false)
+  const { theme, setTheme } = useTheme()
+  const [mounted, setMounted] = useState(false)
+
+  useEffect(() => setMounted(true), [])
 
   return (
     <header className="sticky top-0 z-50 border-b border-border/60 bg-background/85 backdrop-blur-md">
@@ -41,17 +46,39 @@ export function SiteHeader() {
               Fale comigo
             </a>
           </Button>
+          {mounted && (
+            <button
+              type="button"
+              onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+              className="inline-flex size-8 items-center justify-center rounded-md text-muted-foreground transition-colors hover:text-foreground"
+              aria-label="Alternar tema"
+            >
+              {theme === 'dark' ? <Sun className="size-4" /> : <Moon className="size-4" />}
+            </button>
+          )}
         </nav>
 
-        <button
-          type="button"
-          onClick={() => setOpen((v) => !v)}
-          className="inline-flex size-10 items-center justify-center rounded-md text-foreground md:hidden"
-          aria-label={open ? 'Fechar menu' : 'Abrir menu'}
-          aria-expanded={open}
-        >
-          {open ? <X className="size-5" /> : <Menu className="size-5" />}
-        </button>
+        <div className="flex items-center gap-2 md:hidden">
+          {mounted && (
+            <button
+              type="button"
+              onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+              className="inline-flex size-10 items-center justify-center rounded-md text-muted-foreground transition-colors hover:text-foreground"
+              aria-label="Alternar tema"
+            >
+              {theme === 'dark' ? <Sun className="size-4" /> : <Moon className="size-4" />}
+            </button>
+          )}
+          <button
+            type="button"
+            onClick={() => setOpen((v) => !v)}
+            className="inline-flex size-10 items-center justify-center rounded-md text-foreground"
+            aria-label={open ? 'Fechar menu' : 'Abrir menu'}
+            aria-expanded={open}
+          >
+            {open ? <X className="size-5" /> : <Menu className="size-5" />}
+          </button>
+        </div>
       </div>
 
       {open && (

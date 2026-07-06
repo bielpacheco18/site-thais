@@ -1,6 +1,7 @@
 import { Analytics } from '@vercel/analytics/next'
 import type { Metadata, Viewport } from 'next'
 import { Inter, Fraunces } from 'next/font/google'
+import { ThemeProvider } from '@/components/theme-provider'
 import './globals.css'
 
 const inter = Inter({
@@ -23,8 +24,11 @@ export const metadata: Metadata = {
 }
 
 export const viewport: Viewport = {
-  colorScheme: 'light',
-  themeColor: '#f7f5f0',
+  colorScheme: 'light dark',
+  themeColor: [
+    { media: '(prefers-color-scheme: light)', color: '#f7f5f0' },
+    { media: '(prefers-color-scheme: dark)', color: '#1a1a1a' },
+  ],
 }
 
 export default function RootLayout({
@@ -33,10 +37,12 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="pt-BR" className={`${inter.variable} ${fraunces.variable} bg-background`}>
+    <html lang="pt-BR" className={`${inter.variable} ${fraunces.variable} bg-background`} suppressHydrationWarning>
       <body className="font-sans antialiased">
-        {children}
-        {process.env.NODE_ENV === 'production' && <Analytics />}
+        <ThemeProvider>
+          {children}
+          {process.env.NODE_ENV === 'production' && <Analytics />}
+        </ThemeProvider>
       </body>
     </html>
   )
