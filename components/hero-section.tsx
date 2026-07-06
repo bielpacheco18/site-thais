@@ -1,7 +1,25 @@
 import Image from 'next/image'
-import { ArrowRight, ShieldCheck } from 'lucide-react'
+import { ArrowRight, ShieldCheck, TrendingUp, Globe, Scale } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { whatsappLink } from '@/lib/site'
+
+const pillars = [
+  {
+    icon: TrendingUp,
+    title: 'Rentabilidade + Eficiência Fiscal',
+    description: 'Estratégia de investimento que também protege seu IR.',
+  },
+  {
+    icon: Globe,
+    title: 'Patrimônio Internacional',
+    description: 'Diversificação e estruturação fora do Brasil.',
+  },
+  {
+    icon: Scale,
+    title: 'Suporte Jurídico',
+    description: 'Atuação junto a especialistas em planejamento sucessório e tributário.',
+  },
+]
 
 export function HeroSection() {
   return (
@@ -18,8 +36,9 @@ export function HeroSection() {
           </h1>
 
           <p className="max-w-md text-pretty text-base leading-relaxed text-muted-foreground md:text-lg">
-            Sou Thais Hossmann, planejadora financeira. Ajudo você a investir
-            com clareza, propósito e uma estratégia alinhada aos seus objetivos de vida.
+            Sou Thais Hossmann, planejadora financeira certificada (CEA/CPA-20). Ajudo você a
+            investir com clareza, otimizar sua carga tributária e estruturar seu patrimônio —
+            inclusive com soluções internacionais e suporte jurídico especializado, quando necessário.
           </p>
 
           <div className="flex flex-col gap-3 sm:flex-row">
@@ -64,6 +83,22 @@ export function HeroSection() {
               className="object-cover object-top"
             />
           </div>
+        </div>
+      </div>
+
+      <div className="border-t border-border bg-card">
+        <div className="mx-auto grid max-w-6xl gap-6 px-4 py-10 sm:grid-cols-3 md:px-8">
+          {pillars.map((pillar) => (
+            <div key={pillar.title} className="flex items-start gap-4">
+              <span className="flex size-10 shrink-0 items-center justify-center rounded-lg bg-accent text-accent-foreground">
+                <pillar.icon className="size-5" />
+              </span>
+              <div>
+                <p className="font-medium text-foreground">{pillar.title}</p>
+                <p className="mt-0.5 text-sm leading-relaxed text-muted-foreground">{pillar.description}</p>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>
