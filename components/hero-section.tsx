@@ -32,7 +32,7 @@ export function HeroSection() {
           </span>
 
           <h1 className="text-balance font-serif text-4xl font-semibold leading-[1.08] tracking-tight text-foreground md:text-6xl">
-            Seu patrimônio merece uma estratégia sob medida
+            Mais rentabilidade. Menos imposto. Uma estratégia sob medida para o seu patrimônio.
           </h1>
 
           <p className="max-w-md text-pretty text-base leading-relaxed text-muted-foreground md:text-lg">
