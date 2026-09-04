@@ -1,6 +1,6 @@
-import { MessageCircle, Phone, ExternalLink, ArrowRight } from 'lucide-react'
+import { Mail, ExternalLink, ArrowRight } from 'lucide-react'
 import { Button } from '@/components/ui/button'
-import { site, whatsappLink } from '@/lib/site'
+import { site } from '@/lib/site'
 
 export function ContactSection() {
   return (
@@ -13,15 +13,14 @@ export function ContactSection() {
           Pronto para dar o próximo passo com seus investimentos?
         </h2>
         <p className="mx-auto mt-4 max-w-xl text-pretty leading-relaxed text-primary-foreground/80">
-          Me chame no WhatsApp para uma conversa inicial sem compromisso. Vamos entender
+          Preencha o formulário para uma conversa inicial sem compromisso. Vamos entender
           o seu momento e definir juntos a melhor estratégia para você.
         </p>
 
         <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
           <Button asChild size="lg" variant="secondary">
-            <a href={whatsappLink('Olá, Thais! Vim pelo site e gostaria de conversar sobre investimentos.')} target="_blank" rel="noopener noreferrer">
-              <MessageCircle className="size-4" />
-              Falar no WhatsApp
+            <a href={site.leadFormUrl} target="_blank" rel="noopener noreferrer">
+              Preencher formulário
               <ArrowRight className="size-4" />
             </a>
           </Button>
@@ -38,9 +37,13 @@ export function ContactSection() {
           </Button>
         </div>
 
-        <div className="mt-8 flex items-center justify-center gap-2 text-sm text-primary-foreground/70">
-          <Phone className="size-4" />
-          <span>{site.phoneDisplay}</span>
+        <div className="mt-8 flex flex-col items-center justify-center gap-2 text-sm text-primary-foreground/70 sm:flex-row sm:gap-6">
+          <div className="flex items-center gap-2">
+            <Mail className="size-4" />
+            <a href={`mailto:${site.email}`} className="hover:text-primary-foreground transition-colors">
+              {site.email}
+            </a>
+          </div>
         </div>
       </div>
     </section>

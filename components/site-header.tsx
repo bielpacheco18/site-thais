@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react'
 import { Menu, X, Sun, Moon } from 'lucide-react'
 import { useTheme } from 'next-themes'
 import { Button } from '@/components/ui/button'
-import { site, whatsappLink } from '@/lib/site'
+import { site } from '@/lib/site'
 
 const navItems = [
   { label: 'Sobre', href: '#sobre' },
@@ -42,7 +42,7 @@ export function SiteHeader() {
             </a>
           ))}
           <Button asChild size="sm">
-            <a href={whatsappLink('Olá, Thais! Gostaria de falar sobre assessoria de investimentos.')} target="_blank" rel="noopener noreferrer">
+            <a href={site.leadFormUrl} target="_blank" rel="noopener noreferrer">
               Fale comigo
             </a>
           </Button>
@@ -95,7 +95,7 @@ export function SiteHeader() {
               </a>
             ))}
             <Button asChild size="sm" className="mt-2">
-              <a href={whatsappLink('Olá, Thais! Gostaria de falar sobre assessoria de investimentos.')} target="_blank" rel="noopener noreferrer">
+              <a href={site.leadFormUrl} target="_blank" rel="noopener noreferrer">
                 Fale comigo
               </a>
             </Button>
