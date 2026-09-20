@@ -56,7 +56,7 @@ export function HeroSection() {
           <dl className="mt-2 grid grid-cols-3 gap-4 border-t border-border pt-6">
             <div>
               <dt className="sr-only">Seguidores</dt>
-              <dd className="font-serif text-2xl font-semibold text-foreground">+33 mil</dd>
+              <dd className="font-serif text-2xl font-semibold text-foreground">+37 mil</dd>
               <p className="text-xs text-muted-foreground">seguidores no LinkedIn</p>
             </div>
             <div>
@@ -66,8 +66,8 @@ export function HeroSection() {
             </div>
             <div>
               <dt className="sr-only">Certificações</dt>
-              <dd className="font-serif text-2xl font-semibold text-foreground">CPA</dd>
-              <p className="text-xs text-muted-foreground">CPRO-R · CPRO-I</p>
+              <dd className="font-serif text-2xl font-semibold text-foreground">CPRO-I</dd>
+              <p className="text-xs text-muted-foreground">CPA · CPRO-R</p>
             </div>
           </dl>
         </div>
