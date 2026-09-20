@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import { Award, Globe, TrendingUp, Users } from 'lucide-react'
-import { AboutCarousel } from '@/components/about-carousel'
 
 const highlights = [
   {
@@ -30,7 +29,36 @@ export function AboutSection() {
     <section id="sobre" className="border-t border-border bg-card">
       <div className="mx-auto grid max-w-6xl items-center gap-12 px-4 py-16 md:grid-cols-2 md:px-8 md:py-24">
         <div className="relative order-last md:order-first flex flex-col gap-4">
-          <AboutCarousel />
+          <div className="relative mx-auto aspect-[4/3] w-full max-w-md overflow-hidden rounded-2xl bg-secondary shadow-lg">
+            <Image
+              src="/images/thais-about-4.jpg"
+              alt="Retrato de Thais Hossmann"
+              fill
+              priority
+              sizes="(max-width: 768px) 100vw, 40vw"
+              className="object-cover object-center"
+            />
+          </div>
+          <div className="mx-auto grid w-full max-w-md grid-cols-2 gap-3">
+            <div className="relative aspect-[4/3] overflow-hidden rounded-2xl bg-secondary shadow-lg">
+              <Image
+                src="/images/thais-about-1.jpg"
+                alt="Thais Hossmann em entrevista no Expert XP, festival de investimentos"
+                fill
+                sizes="(max-width: 768px) 50vw, 20vw"
+                className="object-cover object-center"
+              />
+            </div>
+            <div className="relative aspect-[4/3] overflow-hidden rounded-2xl bg-secondary shadow-lg">
+              <Image
+                src="/images/thais-about-3.jpg"
+                alt="Thais Hossmann palestrando para equipe da XP Inc."
+                fill
+                sizes="(max-width: 768px) 50vw, 20vw"
+                className="object-cover object-center"
+              />
+            </div>
+          </div>
           <div className="relative mx-auto w-full max-w-md overflow-hidden rounded-2xl shadow-lg">
             <Image
               src="/images/favikon.png"
