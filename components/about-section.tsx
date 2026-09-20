@@ -67,7 +67,7 @@ export function AboutSection() {
                   alt="Thais Hossmann palestrando para equipe da XP Inc."
                   fill
                   sizes="(max-width: 768px) 50vw, 20vw"
-                  className="object-contain object-center"
+                  className="object-cover object-[50%_75%]"
                 />
               </PhotoLightbox>
             </div>
