@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import { Award, Globe, TrendingUp, Users } from 'lucide-react'
-import { AboutCarousel } from '@/components/about-carousel'
 
 const highlights = [
   {
@@ -30,7 +29,15 @@ export function AboutSection() {
     <section id="sobre" className="border-t border-border bg-card">
       <div className="mx-auto grid max-w-6xl items-center gap-12 px-4 py-16 md:grid-cols-2 md:px-8 md:py-24">
         <div className="relative order-last md:order-first flex flex-col gap-4">
-          <AboutCarousel />
+          <div className="relative mx-auto aspect-[4/5] w-full max-w-md overflow-hidden rounded-2xl bg-secondary shadow-lg">
+            <Image
+              src="/images/thais-about.jpeg"
+              alt="Retrato de Thais Hossmann"
+              fill
+              sizes="(max-width: 768px) 100vw, 40vw"
+              className="object-cover object-top"
+            />
+          </div>
           <div className="relative mx-auto w-full max-w-md overflow-hidden rounded-2xl shadow-lg">
             <Image
               src="/images/favikon.png"
