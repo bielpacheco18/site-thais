@@ -28,7 +28,7 @@ export function HeroSection() {
         <div className="flex flex-col gap-6">
           <span className="inline-flex w-fit items-center gap-2 rounded-full border border-border bg-card px-3 py-1 text-xs font-medium uppercase tracking-[0.16em] text-muted-foreground">
             <ShieldCheck className="size-3.5 text-primary" />
-            CEA · CPA-20
+            CPA | CPRO-R | CPRO-I
           </span>
 
           <h1 className="text-balance font-serif text-4xl font-semibold leading-[1.08] tracking-tight text-foreground md:text-6xl">
@@ -36,7 +36,7 @@ export function HeroSection() {
           </h1>
 
           <p className="max-w-md text-pretty text-base leading-relaxed text-muted-foreground md:text-lg">
-            Sou Thais Hossmann, planejadora financeira certificada (CEA/CPA-20). Ajudo você a
+            Sou Thais Hossmann, consultoria financeira certificada (CPA | CPRO-R | CPRO-I). Ajudo você a
             investir com clareza, otimizar sua carga tributária e estruturar seu patrimônio —
             inclusive com soluções internacionais e suporte jurídico especializado, quando necessário.
           </p>
@@ -66,8 +66,8 @@ export function HeroSection() {
             </div>
             <div>
               <dt className="sr-only">Certificações</dt>
-              <dd className="font-serif text-2xl font-semibold text-foreground">CEA</dd>
-              <p className="text-xs text-muted-foreground">e CPA-20</p>
+              <dd className="font-serif text-2xl font-semibold text-foreground">CPA</dd>
+              <p className="text-xs text-muted-foreground">CPRO-R · CPRO-I</p>
             </div>
           </dl>
         </div>

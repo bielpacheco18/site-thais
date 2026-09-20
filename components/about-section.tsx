@@ -14,7 +14,7 @@ const highlights = [
   },
   {
     icon: TrendingUp,
-    title: 'Certificações CEA e CPA-20',
+    title: 'Certificações CPA, CPRO-R e CPRO-I',
     description: 'Qualificação reconhecida pelo mercado para assessorar e recomendar investimentos.',
   },
   {
