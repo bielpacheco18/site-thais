@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import { Award, Globe, TrendingUp, Users } from 'lucide-react'
+import { PhotoLightbox } from '@/components/photo-lightbox'
 
 const highlights = [
   {
@@ -30,43 +31,46 @@ export function AboutSection() {
       <div className="mx-auto grid max-w-6xl items-center gap-12 px-4 py-16 md:grid-cols-2 md:px-8 md:py-24">
         <div className="relative order-last md:order-first flex flex-col gap-4">
           <div className="relative mx-auto aspect-[4/3] w-full max-w-md overflow-hidden rounded-2xl bg-secondary shadow-lg">
-            <Image
-              src="/images/thais-about-4.jpg"
-              alt="Retrato de Thais Hossmann"
-              fill
-              priority
-              sizes="(max-width: 768px) 100vw, 40vw"
-              className="object-cover object-center"
-            />
+            <PhotoLightbox src="/images/thais-about-4.jpg" alt="Retrato de Thais Hossmann">
+              <Image
+                src="/images/thais-about-4.jpg"
+                alt="Retrato de Thais Hossmann"
+                fill
+                priority
+                sizes="(max-width: 768px) 100vw, 40vw"
+                className="object-cover object-center"
+              />
+            </PhotoLightbox>
           </div>
           <div className="mx-auto grid w-full max-w-md grid-cols-2 gap-3">
             <div className="relative aspect-[4/3] overflow-hidden rounded-2xl bg-secondary shadow-lg">
-              <Image
+              <PhotoLightbox
                 src="/images/thais-about-1.jpg"
                 alt="Thais Hossmann em entrevista no Expert XP, festival de investimentos"
-                fill
-                sizes="(max-width: 768px) 50vw, 20vw"
-                className="object-cover object-center"
-              />
+              >
+                <Image
+                  src="/images/thais-about-1.jpg"
+                  alt="Thais Hossmann em entrevista no Expert XP, festival de investimentos"
+                  fill
+                  sizes="(max-width: 768px) 50vw, 20vw"
+                  className="object-cover object-center"
+                />
+              </PhotoLightbox>
             </div>
             <div className="relative aspect-[4/3] overflow-hidden rounded-2xl bg-secondary shadow-lg">
-              <Image
-                src="/images/thais-about-3.jpg"
+              <PhotoLightbox
+                src="/images/thais-about-3.png"
                 alt="Thais Hossmann palestrando para equipe da XP Inc."
-                fill
-                sizes="(max-width: 768px) 50vw, 20vw"
-                className="object-cover object-center"
-              />
+              >
+                <Image
+                  src="/images/thais-about-3.png"
+                  alt="Thais Hossmann palestrando para equipe da XP Inc."
+                  fill
+                  sizes="(max-width: 768px) 50vw, 20vw"
+                  className="object-contain object-center"
+                />
+              </PhotoLightbox>
             </div>
-          </div>
-          <div className="relative mx-auto w-full max-w-md overflow-hidden rounded-2xl shadow-lg">
-            <Image
-              src="/images/favikon.png"
-              alt="Ranking Favikon — Top Voices Worldwide LinkedIn"
-              width={600}
-              height={700}
-              className="w-full"
-            />
           </div>
         </div>
 
@@ -109,6 +113,16 @@ export function AboutSection() {
               </li>
             ))}
           </ul>
+
+          <div className="relative mx-auto w-full max-w-xs overflow-hidden rounded-2xl shadow-lg">
+            <Image
+              src="/images/favikon.png"
+              alt="Ranking Favikon — Top Voices Worldwide LinkedIn"
+              width={600}
+              height={700}
+              className="w-full"
+            />
+          </div>
         </div>
       </div>
     </section>

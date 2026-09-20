@@ -75,7 +75,7 @@ export function HeroSection() {
         <div className="relative">
           <div className="relative mx-auto aspect-[4/5] w-full max-w-md overflow-hidden rounded-2xl bg-secondary shadow-xl">
             <Image
-              src="/images/thais-hero.jpeg"
+              src="/images/thais-hero.png"
               alt="Thais Hossmann, planejadora financeira"
               fill
               priority
