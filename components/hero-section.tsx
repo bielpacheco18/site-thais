@@ -36,7 +36,7 @@ export function HeroSection() {
           </h1>
 
           <p className="max-w-md text-pretty text-base leading-relaxed text-muted-foreground md:text-lg">
-            Sou Thais Hossmann, consultoria financeira certificada (CPA | CPRO-R | CPRO-I). Ajudo você a
+            Sou Thais Hossmann, consultora financeira certificada (CPA | CPRO-R | CPRO-I). Ajudo você a
             investir com clareza, otimizar sua carga tributária e estruturar seu patrimônio —
             inclusive com soluções internacionais e suporte jurídico especializado, quando necessário.
           </p>
