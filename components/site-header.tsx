@@ -3,13 +3,13 @@
 import { useState, useEffect } from 'react'
 import { Menu, X, Sun, Moon } from 'lucide-react'
 import { useTheme } from 'next-themes'
-import { Button } from '@/components/ui/button'
 import { site } from '@/lib/site'
 
 const navItems = [
-  { label: 'Sobre', href: '#sobre' },
-  { label: 'Serviços', href: '#servicos' },
-  { label: 'Contato', href: '#contato' },
+  { label: 'Sobre', href: '/#sobre' },
+  { label: 'Carreira', href: '/#mentoria-carreira' },
+  { label: 'Investimentos', href: '/#mentoria-investimentos' },
+  { label: 'Posicionamento Digital', href: '/posicionamento-digital' },
 ]
 
 export function SiteHeader() {
@@ -22,12 +22,9 @@ export function SiteHeader() {
   return (
     <header className="sticky top-0 z-50 border-b border-border/60 bg-background/85 backdrop-blur-md">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 md:px-8">
-        <a href="#top" className="flex flex-col leading-tight">
-          <span className="font-serif text-lg font-semibold tracking-tight text-foreground">
+        <a href="/#top" className="flex flex-col leading-tight">
+          <span className="font-serif text-lg italic font-semibold tracking-tight text-foreground">
             {site.name}
-          </span>
-          <span className="text-xs uppercase tracking-[0.18em] text-muted-foreground">
-            {site.role}
           </span>
         </a>
 
@@ -41,11 +38,6 @@ export function SiteHeader() {
               {item.label}
             </a>
           ))}
-          <Button asChild size="sm">
-            <a href={site.leadFormUrl} target="_blank" rel="noopener noreferrer">
-              Fale comigo
-            </a>
-          </Button>
           {mounted && (
             <button
               type="button"
@@ -94,11 +86,6 @@ export function SiteHeader() {
                 {item.label}
               </a>
             ))}
-            <Button asChild size="sm" className="mt-2">
-              <a href={site.leadFormUrl} target="_blank" rel="noopener noreferrer">
-                Fale comigo
-              </a>
-            </Button>
           </nav>
         </div>
       )}

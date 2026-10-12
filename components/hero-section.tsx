@@ -1,104 +1,39 @@
 import Image from 'next/image'
-import { ArrowRight, ShieldCheck, TrendingUp, Globe, Scale } from 'lucide-react'
-import { Button } from '@/components/ui/button'
-import { site } from '@/lib/site'
-
-const pillars = [
-  {
-    icon: TrendingUp,
-    title: 'Rentabilidade + Eficiência Fiscal',
-    description: 'Estratégia de investimento que também protege seu IR.',
-  },
-  {
-    icon: Globe,
-    title: 'Patrimônio Internacional',
-    description: 'Diversificação e estruturação fora do Brasil.',
-  },
-  {
-    icon: Scale,
-    title: 'Suporte Jurídico',
-    description: 'Atuação junto a especialistas em planejamento sucessório e tributário.',
-  },
-]
+import { ArrowDown } from 'lucide-react'
 
 export function HeroSection() {
   return (
-    <section id="top" className="relative overflow-hidden">
-      <div className="mx-auto grid max-w-6xl items-center gap-10 px-4 pb-16 pt-14 md:grid-cols-2 md:gap-12 md:px-8 md:pb-24 md:pt-20">
-        <div className="flex flex-col gap-6">
-          <span className="inline-flex w-fit items-center gap-2 rounded-full border border-border bg-card px-3 py-1 text-xs font-medium uppercase tracking-[0.16em] text-muted-foreground">
-            <ShieldCheck className="size-3.5 text-primary" />
-            CPA | CPRO-R | CPRO-I
+    <section id="top" className="relative overflow-hidden bg-gradient-to-br from-accent via-secondary to-accent/60">
+      <div className="mx-auto grid max-w-6xl items-end gap-6 px-4 pt-14 md:grid-cols-2 md:px-8 md:pt-20">
+        <div className="flex flex-col gap-6 pb-14 md:pb-24">
+          <span className="text-xs font-medium uppercase tracking-[0.2em] text-foreground/70">
+            Finanças · Investimentos · Carreira
           </span>
-
-          <h1 className="text-balance font-serif text-4xl font-semibold leading-[1.08] tracking-tight text-foreground md:text-6xl">
-            Mais rentabilidade. Menos imposto. Uma estratégia sob medida para o seu patrimônio.
+          <h1 className="text-balance font-serif text-5xl leading-[1.05] tracking-tight text-foreground md:text-7xl">
+            Prazer, eu sou a <span className="italic text-primary">Thais Hossmann.</span>
           </h1>
-
-          <p className="max-w-md text-pretty text-base leading-relaxed text-muted-foreground md:text-lg">
-            Sou Thais Hossmann, consultora financeira certificada (CPA | CPRO-R | CPRO-I). Ajudo você a
-            investir com clareza, otimizar sua carga tributária e estruturar seu patrimônio —
-            inclusive com soluções internacionais e suporte jurídico especializado, quando necessário.
+          <p className="max-w-md text-pretty text-base leading-relaxed text-foreground/80 md:text-lg">
+            Ajudo pessoas a crescer no mercado financeiro e a fazer o dinheiro trabalhar por elas,
+            com método, estratégia e acompanhamento de perto.
           </p>
-
-          <div className="flex flex-col gap-3 sm:flex-row">
-            <Button asChild size="lg">
-              <a href={site.leadFormUrl} target="_blank" rel="noopener noreferrer">
-                Agendar conversa
-                <ArrowRight className="size-4" />
-              </a>
-            </Button>
-            <Button asChild size="lg" variant="outline">
-              <a href="#servicos">Ver serviços</a>
-            </Button>
-          </div>
-
-          <dl className="mt-2 grid grid-cols-3 gap-4 border-t border-border pt-6">
-            <div>
-              <dt className="sr-only">Seguidores</dt>
-              <dd className="font-serif text-2xl font-semibold text-foreground">+37 mil</dd>
-              <p className="text-xs text-muted-foreground">seguidores no LinkedIn</p>
-            </div>
-            <div>
-              <dt className="sr-only">Reconhecimento</dt>
-              <dd className="font-serif text-2xl font-semibold text-foreground">Top Voice</dd>
-              <p className="text-xs text-muted-foreground">em finanças</p>
-            </div>
-            <div>
-              <dt className="sr-only">Certificações</dt>
-              <dd className="font-serif text-2xl font-semibold text-foreground">CPRO-I</dd>
-              <p className="text-xs text-muted-foreground">CPA · CPRO-R</p>
-            </div>
-          </dl>
+          <a
+            href="#mentorias"
+            className="inline-flex w-fit items-center gap-2 rounded-full bg-foreground px-6 py-3 text-sm font-medium text-background transition-opacity hover:opacity-90"
+          >
+            Conhecer as mentorias
+            <ArrowDown className="size-4" />
+          </a>
         </div>
 
-        <div className="relative">
-          <div className="relative mx-auto aspect-[4/5] w-full max-w-md overflow-hidden rounded-2xl bg-secondary shadow-xl">
-            <Image
-              src="/images/thais-hero.png"
-              alt="Thais Hossmann, planejadora financeira"
-              fill
-              priority
-              sizes="(max-width: 768px) 100vw, 40vw"
-              className="object-cover object-top"
-            />
-          </div>
-        </div>
-      </div>
-
-      <div className="border-t border-border bg-card">
-        <div className="mx-auto grid max-w-6xl gap-6 px-4 py-10 sm:grid-cols-3 md:px-8">
-          {pillars.map((pillar) => (
-            <div key={pillar.title} className="flex items-start gap-4">
-              <span className="flex size-10 shrink-0 items-center justify-center rounded-lg bg-accent text-accent-foreground">
-                <pillar.icon className="size-5" />
-              </span>
-              <div>
-                <p className="font-medium text-foreground">{pillar.title}</p>
-                <p className="mt-0.5 text-sm leading-relaxed text-muted-foreground">{pillar.description}</p>
-              </div>
-            </div>
-          ))}
+        <div className="relative mx-auto aspect-[4/5] w-full max-w-sm self-end overflow-hidden rounded-t-3xl md:max-w-md">
+          <Image
+            src="/images/thais-hero.png"
+            alt="Thais Hossmann"
+            fill
+            priority
+            sizes="(max-width: 768px) 100vw, 40vw"
+            className="object-cover object-top"
+          />
         </div>
       </div>
     </section>
