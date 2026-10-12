@@ -3,7 +3,7 @@ import { ArrowDown } from 'lucide-react'
 
 export function HeroSection() {
   return (
-    <section id="top" className="relative overflow-hidden bg-gradient-to-br from-accent via-secondary to-accent/60">
+    <section id="top" className="relative overflow-hidden bg-[linear-gradient(90deg,#b6a08c_0%,#d7c5b4_35%,#dccebe_100%)]">
       <div className="mx-auto grid max-w-6xl items-end gap-6 px-4 pt-14 md:grid-cols-2 md:px-8 md:pt-20">
         <div className="flex flex-col gap-6 pb-14 md:pb-24">
           <span className="text-xs font-medium uppercase tracking-[0.2em] text-foreground/70">
@@ -25,14 +25,14 @@ export function HeroSection() {
           </a>
         </div>
 
-        <div className="relative mx-auto aspect-[4/5] w-full max-w-sm self-end overflow-hidden rounded-t-3xl md:max-w-md">
+        <div className="relative mx-auto aspect-[910/1502] w-full max-w-xs self-end md:max-w-sm">
           <Image
-            src="/images/thais-hero.jpg"
+            src="/images/thais-hero.png"
             alt="Thais Hossmann"
             fill
             priority
-            sizes="(max-width: 768px) 100vw, 40vw"
-            className="object-cover object-top"
+            sizes="(max-width: 768px) 80vw, 35vw"
+            className="object-contain object-bottom"
           />
         </div>
       </div>

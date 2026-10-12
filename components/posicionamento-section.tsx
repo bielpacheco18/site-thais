@@ -193,29 +193,6 @@ export function PosicionamentoSection() {
         </div>
       </section>
 
-      <section className="bg-background">
-        <div className="mx-auto max-w-5xl px-4 py-16 md:px-8 md:py-24">
-          <span className="text-xs font-medium uppercase tracking-[0.2em] text-primary">Depoimentos</span>
-          <h2 className="mt-3 font-serif text-3xl tracking-tight text-foreground md:text-4xl">
-            O que dizem <span className="italic text-primary">quem já passou por aqui</span>
-          </h2>
-          <div className="mt-8 grid gap-4 md:grid-cols-3">
-            {[1, 2, 3].map((i) => (
-              <figure key={i} className="rounded-2xl bg-card p-6 shadow-sm">
-                <blockquote className="text-sm text-muted-foreground">“[Depoimento real, com autorização]”</blockquote>
-                <figcaption className="mt-5 flex items-center gap-3">
-                  <span className="size-9 rounded-full bg-accent" aria-hidden />
-                  <span className="text-xs">
-                    <span className="block font-medium text-foreground">[Nome]</span>
-                    <span className="text-muted-foreground">[Cargo]</span>
-                  </span>
-                </figcaption>
-              </figure>
-            ))}
-          </div>
-        </div>
-      </section>
-
       <section className="bg-secondary">
         <div className="mx-auto max-w-3xl px-4 py-16 text-center md:px-8 md:py-24">
           <span className="text-xs font-medium uppercase tracking-[0.2em] text-primary">Condição especial · até 31 de outubro</span>
