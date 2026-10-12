@@ -25,14 +25,14 @@ export function HeroSection() {
           </a>
         </div>
 
-        <div className="relative mx-auto aspect-[4/5] w-full max-w-sm self-end overflow-hidden rounded-t-3xl md:max-w-md">
+        <div className="relative mx-auto aspect-[910/1502] w-full max-w-xs self-end md:max-w-sm">
           <Image
-            src="/images/thais-hero.jpg"
+            src="/images/thais-hero.png"
             alt="Thais Hossmann"
             fill
             priority
-            sizes="(max-width: 768px) 100vw, 40vw"
-            className="object-cover object-top"
+            sizes="(max-width: 768px) 80vw, 35vw"
+            className="object-contain object-bottom"
           />
         </div>
       </div>
