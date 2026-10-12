@@ -27,7 +27,7 @@ export function HeroSection() {
 
         <div className="relative mx-auto aspect-[4/5] w-full max-w-sm self-end overflow-hidden rounded-t-3xl md:max-w-md">
           <Image
-            src="/images/thais-hero.png"
+            src="/images/thais-hero.jpg"
             alt="Thais Hossmann"
             fill
             priority
