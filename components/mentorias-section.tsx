@@ -37,7 +37,7 @@ const cards = [
     description: 'Para profissionais do mercado financeiro que querem captar bons clientes pelas redes.',
     items: ['LinkedIn, Instagram e TikTok', 'Vídeos e conteúdo que captam', 'Do seguidor ao cliente'],
     cta: 'Quero captar clientes',
-    href: whatsappUrl('Oi Thais! Quero saber mais sobre a Mentoria de Posicionamento Digital.'),
+    href: '#posicionamento',
     dark: true,
   },
 ]
