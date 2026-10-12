@@ -9,7 +9,7 @@ const navItems = [
   { label: 'Sobre', href: '/#sobre' },
   { label: 'Carreira', href: '/#mentoria-carreira' },
   { label: 'Investimentos', href: '/#mentoria-investimentos' },
-  { label: 'Posicionamento Digital', href: '/posicionamento-digital' },
+  { label: 'Posicionamento Digital', href: '/#mentoria-posicionamento' },
 ]
 
 export function SiteHeader() {
