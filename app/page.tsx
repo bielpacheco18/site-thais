@@ -1,8 +1,9 @@
 import { SiteHeader } from '@/components/site-header'
 import { HeroSection } from '@/components/hero-section'
-import { AboutSection } from '@/components/about-section'
-import { ServicesSection } from '@/components/services-section'
-import { ContactSection } from '@/components/contact-section'
+import { StorySection } from '@/components/story-section'
+import { MentoriasSection } from '@/components/mentorias-section'
+import { PosicionamentoSection } from '@/components/posicionamento-section'
+import { PromoBar } from '@/components/promo-bar'
 import { SiteFooter } from '@/components/site-footer'
 
 export default function Page() {
@@ -10,9 +11,10 @@ export default function Page() {
     <main className="min-h-screen bg-background">
       <SiteHeader />
       <HeroSection />
-      <AboutSection />
-      <ServicesSection />
-      <ContactSection />
+      <StorySection />
+      <MentoriasSection />
+      <PosicionamentoSection />
+      <PromoBar />
       <SiteFooter />
     </main>
   )
