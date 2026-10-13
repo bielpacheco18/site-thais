@@ -108,17 +108,17 @@ export function MentoriasSection() {
           ))}
         </div>
 
-        <p className="mx-auto mt-10 max-w-xl text-balance text-center text-sm text-muted-foreground">
+        <p className="mt-10 text-center text-sm text-muted-foreground">
           Ainda em dúvida?{' '}
           <a
-            href={mentoriasWhatsappUrl('Olá! Quero saber mais sobre as mentorias da Thais.')}
+            href={mentoriasWhatsappUrl('Oi Thais! Preciso de ajuda para escolher a mentoria ideal.')}
             target="_blank"
             rel="noopener noreferrer"
             className="font-semibold text-foreground underline-offset-4 hover:underline"
           >
-            Entre em contato com a Flávia, minha sócia,
+            Me chama no WhatsApp
           </a>{' '}
-          que ela vai te encaminhar todas as informações.
+          e eu te ajudo a escolher.
         </p>
       </div>
     </section>

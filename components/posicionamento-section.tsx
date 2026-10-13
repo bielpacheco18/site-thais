@@ -247,9 +247,6 @@ export function PosicionamentoSection() {
             Quero a Mentoria de Posicionamento
             <ArrowRight className="size-4" />
           </a>
-          <p className="mt-4 text-xs opacity-75">
-            Entre em contato com a Flávia, minha sócia, que ela vai te encaminhar todas as informações.
-          </p>
         </div>
       </section>
 
