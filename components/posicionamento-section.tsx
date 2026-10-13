@@ -1,7 +1,7 @@
 import { ArrowRight, Check, Plus } from 'lucide-react'
-import { whatsappUrl } from '@/lib/site'
+import { mentoriasWhatsappUrl } from '@/lib/site'
 
-const ctaHref = whatsappUrl('Oi Thais! Quero saber mais sobre a Mentoria de Posicionamento Digital.')
+const ctaHref = mentoriasWhatsappUrl('Oi Thais! Quero saber mais sobre a Mentoria de Posicionamento Digital.')
 
 const pains = [
   'Sua carteira depende de indicação e de lista fria, e você sente que bateu no teto.',

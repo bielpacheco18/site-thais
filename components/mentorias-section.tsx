@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { ArrowRight, Check } from 'lucide-react'
-import { whatsappUrl } from '@/lib/site'
+import { mentoriasWhatsappUrl } from '@/lib/site'
 
 const cards = [
   {
@@ -15,7 +15,7 @@ const cards = [
       'Como crescer dentro do banco',
     ],
     cta: 'Quero crescer na carreira',
-    href: whatsappUrl('Oi Thais! Quero saber mais sobre a Mentoria de Carreira.'),
+    href: mentoriasWhatsappUrl('Oi Thais! Quero saber mais sobre a Mentoria de Carreira.'),
     dark: false,
   },
   {
@@ -26,7 +26,7 @@ const cards = [
     description: 'Para quem quer organizar o dinheiro, planejar o futuro e aprender a investir do zero.',
     items: ['Organização financeira', 'Planejamento e reserva de emergência', 'Investimentos com estratégia'],
     cta: 'Quero investir melhor',
-    href: whatsappUrl('Oi Thais! Quero saber mais sobre a Mentoria de Investimentos.'),
+    href: mentoriasWhatsappUrl('Oi Thais! Quero saber mais sobre a Mentoria de Investimentos.'),
     dark: false,
   },
   {
@@ -111,7 +111,7 @@ export function MentoriasSection() {
         <p className="mt-10 text-center text-sm text-muted-foreground">
           Ainda em dúvida?{' '}
           <a
-            href={whatsappUrl('Oi Thais! Preciso de ajuda para escolher a mentoria ideal.')}
+            href={mentoriasWhatsappUrl('Oi Thais! Preciso de ajuda para escolher a mentoria ideal.')}
             target="_blank"
             rel="noopener noreferrer"
             className="font-semibold text-foreground underline-offset-4 hover:underline"
